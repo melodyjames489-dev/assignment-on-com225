@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS Box Model Demo</title>
+    <style>
+        /* BOX MODEL DEMO BOX
+           Purpose: Show the 4 parts of CSS Box Model: Content > Padding > Border > Margin */
+        .box {
+            width: 250px;              /* CONTENT: the actual text area */
+            padding: 20px;             /* PADDING: space inside the border, around content */
+            border: 5px solid blue;    /* BORDER: the line around padding */
+            margin: 30px;              /* MARGIN: space outside the border, between boxes */
+            background-color: lightblue; /* This shows the padding area */
+        }
+
+        /* LABEL STYLE - just to make text readable */
+        .label {
+            font-family: Arial;
+            font-size: 14px;
+        }
+
+        /* MARGIN AREA VISUAL - outer wrapper to show margin space */
+        .margin-area {
+            background-color: #f0f0f0; /* Shows where margin exists */
+        }
+    </style>
+</head>
+<body>
+
+    <!-- STUDENT DETAILS AT THE TOP -->
+    <h1>Student Details</h1>
+    <p class="label">Name: james mmaduabuchi obasi </p>
+    <p class="label">Registration No: 2024/nd/41127/cs
+    </p>
+    <hr>
+
+    <!-- CSS BOX MODEL SECTION -->
+    <h2>CSS Box Model Demonstration</h2>
+    
+    <div class="margin-area">
+        <!-- MARGIN: Outermost space. Gray background shows this area -->
+        <p class="label">Margin: 30px - space outside the blue border</p>
+        
+        <div class="box">
+            <!-- BORDER: The 5px solid blue line -->
+            <!-- PADDING: 20px lightblue area inside the border -->
+            <!-- CONTENT: This text inside -->
+            <p class="label"><strong>Content:</strong> This is the text/content area</p>
+            <p class="label"><strong>Padding:</strong> 20px of lightblue space around content</p>
+            <p class="label"><strong>Border:</strong> 5px solid blue line</p>
+        </div>
+        
+        <p class="label">Total space taken = margin + border + padding + content width</p>
+    </div>
+
+</body>
+</html>
